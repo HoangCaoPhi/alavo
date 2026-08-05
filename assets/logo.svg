@@ -1,0 +1,73 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <title>Alavo App Logo</title>
+  <desc>Rounded-corner crystal hexagon, exact Herond palette, open-book glyph with bookmark accent</desc>
+
+  <defs>
+    <clipPath id="hexClip">
+      <path d="M219.63,27.00 Q256.00,6.00 292.37,27.00 L436.13,110.00 Q472.51,131.00 472.51,173.00 L472.51,339.00 Q472.51,381.00 436.13,402.00 L292.37,485.00 Q256.00,506.00 219.63,485.00 L75.87,402.00 Q39.49,381.00 39.49,339.00 L39.49,173.00 Q39.49,131.00 75.87,110.00 L219.63,27.00 Z"/>
+    </clipPath>
+
+    <linearGradient id="base" x1="256" y1="6" x2="256" y2="506" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00E4FF"/>
+      <stop offset="0.45" stop-color="#119EF0"/>
+      <stop offset="0.8" stop-color="#1142A8"/>
+      <stop offset="1" stop-color="#6633FF"/>
+    </linearGradient>
+
+    <radialGradient id="glowCyan" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(130 90) scale(260 260)">
+      <stop offset="0" stop-color="#00E4FF" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#00E4FF" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glowBlue" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(380 190) scale(270 270)">
+      <stop offset="0" stop-color="#348BF6" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#348BF6" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glowPurpleAccent" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(256 430) scale(170 170)">
+      <stop offset="0" stop-color="#6633FF" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#6633FF" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="glowPinkAccent" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(256 465) scale(100 100)">
+      <stop offset="0" stop-color="#FF4070" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#FF4070" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="innerGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(256 245) scale(180 180)">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.45"/>
+      <stop offset="0.6" stop-color="#FFFFFF" stop-opacity="0.1"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="softIcon" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+  </defs>
+
+  <g clip-path="url(#hexClip)">
+    <path d="M219.63,27.00 Q256.00,6.00 292.37,27.00 L436.13,110.00 Q472.51,131.00 472.51,173.00 L472.51,339.00 Q472.51,381.00 436.13,402.00 L292.37,485.00 Q256.00,506.00 219.63,485.00 L75.87,402.00 Q39.49,381.00 39.49,339.00 L39.49,173.00 Q39.49,131.00 75.87,110.00 L219.63,27.00 Z" fill="url(#base)"/>
+    <rect x="0" y="0" width="512" height="512" fill="url(#glowCyan)"/>
+    <rect x="0" y="0" width="512" height="512" fill="url(#glowBlue)"/>
+    <rect x="0" y="0" width="512" height="512" fill="url(#glowPurpleAccent)"/>
+    <rect x="0" y="0" width="512" height="512" fill="url(#glowPinkAccent)"/>
+    <circle cx="256" cy="245" r="170" fill="url(#innerGlow)"/>
+  </g>
+  <path d="M219.63,27.00 Q256.00,6.00 292.37,27.00 L436.13,110.00 Q472.51,131.00 472.51,173.00 L472.51,339.00 Q472.51,381.00 436.13,402.00 L292.37,485.00 Q256.00,506.00 219.63,485.00 L75.87,402.00 Q39.49,381.00 39.49,339.00 L39.49,173.00 Q39.49,131.00 75.87,110.00 L219.63,27.00 Z" fill="none" stroke="#FFFFFF" stroke-opacity="0.16" stroke-width="1.5"/>
+
+  <g filter="url(#softIcon)" opacity="0.45">
+    <path d="M256 178 C214 182 176 194 152 208 L152 336 C176 348 214 358 256 362 Z" fill="#FFFFFF"/>
+    <path d="M256 178 C298 182 336 194 360 208 L360 336 C336 348 298 358 256 362 Z" fill="#FFFFFF"/>
+  </g>
+  <g>
+    <path d="M256 178 C214 182 176 194 152 208 L152 336 C176 348 214 358 256 362 Z" fill="#FFFFFF"/>
+    <path d="M256 178 C298 182 336 194 360 208 L360 336 C336 348 298 358 256 362 Z" fill="#FFFFFF"/>
+    <path d="M250 178 L262 178 L262 362 L250 362 Z" fill="#DCE6F5"/>
+    <path d="M242 178 L270 178 L270 224 L256 212 L242 224 Z" fill="#6633FF"/>
+  </g>
+</svg>

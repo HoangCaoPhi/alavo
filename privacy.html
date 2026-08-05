@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Alavo</title>
+  <meta name="description" content="Alavo stores your vocabulary on your own device. No accounts, no analytics, no ads, no data sold.">
+  <link rel="icon" href="assets/logo.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap header-inner">
+    <a class="brand" href="./">
+      <img src="assets/logo.svg" alt="">
+      Alavo
+    </a>
+    <nav>
+      <a href="./">Home</a>
+      <a href="https://github.com/HoangCaoPhi/vocabmaster-local">GitHub</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap prose">
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: 5 August 2026 · Applies to the Alavo browser extension and the
+    Alavo mobile app.</p>
+
+  <h2>The short version</h2>
+  <p>Alavo has <strong>no user accounts, no servers of its own, no analytics, no advertising and
+    no trackers</strong>. Your vocabulary, your study history and your settings are stored on your
+    own device. We never receive them, so we cannot sell, share or lose them.</p>
+
+  <h2>What is stored on your device</h2>
+  <ul>
+    <li>The words you save, their definitions, your example sentences and your sets.</li>
+    <li>Your review schedule and study statistics.</li>
+    <li>Your settings, including any API key you choose to add.</li>
+  </ul>
+  <p>This data lives in your browser's own local storage for the extension, or in the app's private
+    storage on mobile. Uninstalling removes it. Nothing is uploaded anywhere unless you turn on
+    backup yourself.</p>
+
+  <h2>Google Drive backup — only if you ask for it</h2>
+  <p>Backup is off until you sign in. When you do:</p>
+  <ul>
+    <li>We request the single scope <code>drive.file</code>, which grants access <strong>only to
+      files the app itself creates</strong>. Alavo cannot see, read or touch anything else in your
+      Drive.</li>
+    <li>Alavo creates a normal, visible folder named <strong>“Alavo Backup”</strong> in your My
+      Drive and keeps your backup file there — not in a hidden application folder — so you can
+      open, copy or delete it yourself at any time.</li>
+    <li>The backup goes from your device straight to your Google account. It does not pass through
+      any server of ours.</li>
+    <li>Signing out, or revoking access at <a href="https://myaccount.google.com/permissions">Google
+      Account → Third-party access</a>, stops it immediately.</li>
+  </ul>
+
+  <h2>What leaves your device while you use Alavo</h2>
+  <p>To look a word up, the word — and sometimes the sentence around it — has to be sent to a
+    dictionary or translation service. That is the only content that ever leaves your device.</p>
+  <table>
+    <thead>
+      <tr><th>Service</th><th>What is sent</th><th>When</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Google Translate API</td>
+        <td>The word or phrase you looked up</td>
+        <td>On each lookup that needs a translation</td>
+      </tr>
+      <tr>
+        <td>dictionaryapi.dev</td>
+        <td>The word you looked up</td>
+        <td>On each English dictionary lookup</td>
+      </tr>
+      <tr>
+        <td>YouTube</td>
+        <td>The ID of the video you chose to import</td>
+        <td>Only when you import that video's subtitles</td>
+      </tr>
+      <tr>
+        <td>Groq, Google Gemini or DeepSeek</td>
+        <td>The word and its context</td>
+        <td>Only if you added your own API key, and only for your lookups</td>
+      </tr>
+      <tr>
+        <td>Google Drive</td>
+        <td>Your backup file</td>
+        <td>Only after you sign in to backup</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>Each of those services handles the request under its own privacy policy. Alavo sends no
+    identifier of you along with it — no account, no device ID, no advertising ID.</p>
+
+  <h2>Any API key you add</h2>
+  <p>If you provide a Groq, Gemini or DeepSeek key, it is stored on your device only and used only
+    to make your own lookups. It is never transmitted to us and is not included in Drive backups
+    shared with anyone else.</p>
+
+  <h2>Why the extension asks for its permissions</h2>
+  <table>
+    <thead><tr><th>Permission</th><th>Reason</th></tr></thead>
+    <tbody>
+      <tr><td>Read the page you are on (<code>activeTab</code>, <code>scripting</code>)</td>
+        <td>To show the lookup card for the word you selected. Nothing is read until you select
+          or double-click a word.</td></tr>
+      <tr><td>Tabs and side panel</td>
+        <td>To open the practice panel beside the YouTube video you are watching.</td></tr>
+      <tr><td>Network requests (<code>webRequest</code>, <code>declarativeNetRequest</code>)</td>
+        <td>To fetch the subtitle track of the video you asked to import.</td></tr>
+      <tr><td>Storage (<code>storage</code>, <code>unlimitedStorage</code>)</td>
+        <td>To keep your vocabulary on your device and work offline. A real vocabulary library
+          outgrows the default quota.</td></tr>
+      <tr><td>Sign-in (<code>identity</code>)</td>
+        <td>To let you sign in to your own Google Drive for backup.</td></tr>
+      <tr><td>Offscreen documents</td>
+        <td>To play pronunciation audio and run the local database outside the visible UI.</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Children</h2>
+  <p>Alavo is a study tool suitable for general audiences. It does not knowingly collect personal
+    information from anyone, of any age — because it does not collect personal information at all.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If a future version of Alavo changes how data is handled, this page is updated with a new
+    date above before that version ships. The full history of this page is public in the
+    <a href="https://github.com/HoangCaoPhi/vocabmaster-local">source repository</a>.</p>
+
+  <h2>Contact</h2>
+  <p>Questions, or a data request:
+    <a href="mailto:hoangcaophi11061999@gmail.com">hoangcaophi11061999@gmail.com</a>.</p>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <span>© 2026 Alavo</span>
+    <span>
+      <a href="./">Home</a> ·
+      <a href="https://github.com/HoangCaoPhi/vocabmaster-local">Source code</a>
+    </span>
+  </div>
+</footer>
+
+</body>
+</html>
