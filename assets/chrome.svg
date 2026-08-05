@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="Chrome">
+  <path fill="#ea4335" d="M24 24 L34.50 4.67 A22 22 0 0 0 2.01 23.42 Z"/>
+  <path fill="#fbbc05" d="M24 24 L2.01 24.58 A22 22 0 0 0 34.50 43.33 Z"/>
+  <path fill="#34a853" d="M24 24 L35.50 42.76 A22 22 0 0 0 35.50 5.24 Z"/>
+  <circle cx="24" cy="24" r="10.4" fill="#fff"/>
+  <circle cx="24" cy="24" r="8.4" fill="#4285f4"/>
+</svg>

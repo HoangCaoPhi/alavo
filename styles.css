@@ -104,6 +104,8 @@ nav a:hover { background: var(--bg-soft); color: var(--fg); }
 
 .btn:hover { transform: translateY(-1px); }
 
+.btn img { flex: none; width: 18px; height: 18px; }
+
 .btn-primary {
   background: var(--accent);
   border-color: var(--accent);
