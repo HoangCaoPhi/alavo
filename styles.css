@@ -1,3 +1,7 @@
+/* Cùng font với UI của app (apps/extension/entrypoints/style.css) để trang giới thiệu và
+   các ảnh chụp bên dưới không lệch mặt chữ. */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 *, *::before, *::after { box-sizing: border-box; }
 
 :root {

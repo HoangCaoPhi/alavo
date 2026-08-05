@@ -5,13 +5,11 @@ on:
     branches: [main]
   workflow_dispatch:
 
-# Trang tĩnh thuần: không build, không cài dependency — upload thẳng thư mục repo.
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Nhiều lần push liên tiếp: chỉ giữ lần deploy mới nhất.
 concurrency:
   group: pages
   cancel-in-progress: true
