@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy — Paperly</title>
+  <meta name="description" content="Paperly reads books from a folder you choose and keeps everything on your device. No accounts, no analytics, no trackers, no data sold.">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="paperly.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap header-inner">
+    <a class="brand" href="./">
+      <img src="assets/logo.png" alt="">
+      Paperly
+    </a>
+    <nav>
+      <a href="./">Home</a>
+      <a href="../">Alavo</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap prose">
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: 2 September 2026 · Applies to the Paperly browser extension
+    and the Paperly Android app.</p>
+
+  <h2>The short version</h2>
+  <p>Paperly has <strong>no user accounts, no servers of its own, no analytics and no
+    trackers</strong>. Your books never leave your device — the extension reads them from a
+    folder you choose and never uploads a file anywhere. Your highlights, notes and reading
+    progress are stored locally. We never receive any of it, so we cannot sell, share or lose
+    it.</p>
+  <p>Two things do reach the network, both described in full below: a passage you explicitly ask
+    to have translated, and the book covers on the Support page.</p>
+
+  <h2>Your books and the folder you choose</h2>
+  <p>Paperly cannot see your disk. You pick one folder, and your browser grants access to that
+    folder and nothing outside it. In the Android app the same choice is made through Android's
+    own document picker.</p>
+  <ul>
+    <li>Files are read from that folder <strong>and only that folder</strong>, on your device, to
+      display them.</li>
+    <li>No file, no page and no fragment of a book is ever uploaded, copied to a server or sent
+      to us.</li>
+    <li>Nothing in the folder is modified unless you ask for it — creating a folder, renaming a
+      book, moving one between shelves, or deleting one from inside Paperly.</li>
+    <li>You can withdraw the grant at any time in your browser's site settings, or by removing
+      the extension.</li>
+  </ul>
+
+  <h2>What is stored on your device</h2>
+  <ul>
+    <li>Your highlights, their colours, and the notes attached to them.</li>
+    <li>Your reading progress and history for each book.</li>
+    <li>Words you save while reading.</li>
+    <li>Your settings: reading colour, font size, interface language.</li>
+    <li>A reference to the folder you picked, so you do not have to choose it again.</li>
+  </ul>
+  <p>This lives in the browser's own local storage for the extension, and in the app's private
+    storage on Android. It is never transmitted. Removing the extension, or the app, removes
+    it.</p>
+  <p>Paperly identifies a book by the contents of its file rather than by its name or location.
+    That is what lets your highlights survive renaming or moving a book. The fingerprint is
+    computed on your device and stays there.</p>
+
+  <h2>What leaves your device</h2>
+  <table>
+    <thead>
+      <tr><th>Service</th><th>What is sent</th><th>When</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Google Translate (<code>translate.googleapis.com</code>)</td>
+        <td>Only the passage you selected</td>
+        <td>Only when you ask for a translation</td>
+      </tr>
+      <tr>
+        <td>MyMemory (<code>api.mymemory.translated.net</code>)</td>
+        <td>The same passage</td>
+        <td>Only as a fallback, when the request above is refused or rate-limited</td>
+      </tr>
+      <tr>
+        <td>Shopee's image CDN (<code>down-vn.img.susercontent.com</code>)</td>
+        <td>Nothing about you beyond what any image request carries — your IP address and
+          browser</td>
+        <td>Only while the Support tab is open, to show the book covers on it</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>That is the complete list. Paperly sends no identifier along with any of it — no account, no
+    device ID, no advertising ID — and it never sends the book, the file name, or anything about
+    the rest of your library. Each service handles the request under its own privacy policy. If
+    you never translate anything and never open the Support tab, Paperly makes no network
+    requests at all.</p>
+
+  <h2>The Support tab, and affiliate links</h2>
+  <p>Paperly is free and carries no advertising network. The Support tab does contain book links
+    to Shopee that earn a small commission if you buy through them, and a bank QR code if you
+    would rather give directly. Nothing about you is passed to those links beyond the ordinary
+    contents of a click, and none of it is tied to what you read.</p>
+
+  <h2>Why the extension asks for its permissions</h2>
+  <table>
+    <thead><tr><th>Permission</th><th>Reason</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>Tabs (<code>tabs</code>)</td>
+        <td>To open Paperly's own reader tab when you click the toolbar icon. It is not used to
+          read, list or watch the tabs you have open.</td>
+      </tr>
+      <tr>
+        <td>Access to <code>translate.googleapis.com</code> and
+          <code>api.mymemory.translated.net</code></td>
+        <td>Chrome will not let an extension page reach any other origin without naming it. These
+          two are named because the translate feature calls them — and nothing else is named,
+          which is why Paperly cannot reach anywhere else.</td>
+      </tr>
+      <tr>
+        <td>The folder you choose (File System Access)</td>
+        <td>To read your books, and to create, rename, move or delete inside that folder when you
+          ask. Granted by you, per folder, and revocable.</td>
+      </tr>
+      <tr>
+        <td>Local storage (origin private file system, IndexedDB)</td>
+        <td>To keep your highlights, notes and progress in a local database so the reader works
+          offline.</td>
+      </tr>
+    </tbody>
+  </table>
+  <p>Paperly ships <strong>no content scripts</strong>. It does not run on, read or alter the web
+    pages you visit; everything happens on its own page.</p>
+
+  <h2>The Android app</h2>
+  <p>The Android build declares one permission: internet access, used for the same translation
+    request described above. It asks for no storage permission — not media access, and not
+    all-files access. Your books are reached through Android's Storage Access Framework, meaning
+    the folder you pick in the system picker, and nothing else.</p>
+  <p>If you send a book to Paperly from another app with Share or Open with, that single file is
+    copied into the app's own private storage so it can be opened. That copy stays on your
+    device.</p>
+
+  <h2>Children</h2>
+  <p>Paperly is a reading tool suitable for general audiences. It does not knowingly collect
+    personal information from anyone, of any age — because it does not collect personal
+    information at all.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If a future version of Paperly changes how data is handled, this page is updated with a new
+    date above before that version ships, and the change is noted in the release notes on the
+    Chrome Web Store.</p>
+
+  <h2>Contact</h2>
+  <p>Questions, or a data request:
+    <a href="mailto:hoangcaophi11061999@gmail.com">hoangcaophi11061999@gmail.com</a>.</p>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <span>© 2026 Paperly · an <a href="../">Alavo</a> project</span>
+    <span>
+      <a href="./">Home</a> ·
+      <a href="mailto:hoangcaophi11061999@gmail.com">Contact</a>
+    </span>
+  </div>
+</footer>
+
+</body>
+</html>

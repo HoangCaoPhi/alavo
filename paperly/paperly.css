@@ -1,0 +1,103 @@
+/* Paperly's own palette over the shared Alavo layout: cream page, white cards,
+   ink borders, one coral accent, and a hard offset shadow with no blur.
+   Values come from the app's DESIGN.md so the site and the product match. */
+
+:root {
+  --bg: #f7f3eb;
+  --bg-soft: #ffffff;
+  --fg: #1a1c1e;
+  --fg-muted: #5c574e;
+  --fg-faint: #8c857a;
+  --line: #ded6c6;
+  --ink-line: #1a1c1e;
+  --hard: 4px 4px 0 var(--ink-line);
+  --accent: #fe976c;
+  /* White on coral fails contrast; text on the accent is always ink. */
+  --accent-fg: #1a1c1e;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #191712;
+    --bg-soft: #24211b;
+    --fg: #f7f3eb;
+    --fg-muted: #b3ab9c;
+    --fg-faint: #7a7266;
+    --line: #332f27;
+    --ink-line: #4a453a;
+    --hard: 4px 4px 0 #0f0d0a;
+    --accent: #fe976c;
+    --accent-fg: #1a1c1e;
+  }
+}
+
+/* Serif names things — the product, a section, a feature. Sans stays on
+   everything the reader operates. */
+.brand, h1, h2, .card h3 {
+  font-family: ui-serif, Georgia, "Iowan Old Style", "Times New Roman", serif;
+  letter-spacing: -0.02em;
+}
+
+.card, .btn-primary, .shot {
+  border-color: var(--ink-line);
+  box-shadow: var(--hard);
+}
+
+.btn-primary:hover { background: #f4753f; border-color: var(--ink-line); }
+
+/* The store listing does not exist yet: this reads as a state, not a link. */
+.btn-soon {
+  color: var(--fg-muted);
+  border-style: dashed;
+  cursor: default;
+}
+
+.btn-soon:hover { transform: none; }
+
+.steps {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  counter-reset: step;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.steps li {
+  padding: 24px;
+  border: 1px solid var(--ink-line);
+  border-radius: var(--radius);
+  background: var(--bg-soft);
+  box-shadow: var(--hard);
+  color: var(--fg-muted);
+  font-size: 14.5px;
+}
+
+.steps li::before {
+  counter-increment: step;
+  content: counter(step);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  margin-bottom: 14px;
+  border: 1px solid var(--ink-line);
+  border-radius: 8px;
+  background: var(--accent);
+  color: var(--accent-fg);
+  font-weight: 650;
+}
+
+.steps strong { display: block; margin-bottom: 6px; color: var(--fg); font-weight: 620; }
+
+.hero-mark {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 24px;
+  border: 1px solid var(--ink-line);
+  border-radius: 16px;
+  background: var(--bg-soft);
+  box-shadow: var(--hard);
+}
