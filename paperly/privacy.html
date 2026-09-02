@@ -109,11 +109,6 @@
     <thead><tr><th>Permission</th><th>Reason</th></tr></thead>
     <tbody>
       <tr>
-        <td>Tabs (<code>tabs</code>)</td>
-        <td>To open Paperly's own reader tab when you click the toolbar icon. It is not used to
-          read, list or watch the tabs you have open.</td>
-      </tr>
-      <tr>
         <td>Access to <code>translate.googleapis.com</code> and
           <code>api.mymemory.translated.net</code></td>
         <td>Chrome will not let an extension page reach any other origin without naming it. These
@@ -132,8 +127,10 @@
       </tr>
     </tbody>
   </table>
-  <p>Paperly ships <strong>no content scripts</strong>. It does not run on, read or alter the web
-    pages you visit; everything happens on its own page.</p>
+  <p>Beyond those two hosts the extension declares <strong>no permissions at all</strong>, and it
+    ships <strong>no content scripts</strong>. It cannot read your tabs, your history or your
+    bookmarks, and it does not run on, read or alter the web pages you visit — everything happens
+    on its own page.</p>
 
   <h2>The Android app</h2>
   <p>The Android build declares one permission: internet access, used for the same translation
